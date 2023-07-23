@@ -1,4 +1,5 @@
 var express = require('express');
+var prom = require('prom-client');
 
 var app = express();
 
