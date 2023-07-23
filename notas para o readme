@@ -1,3 +1,0 @@
-docker run --name prometheus --rm -d -p 9090:9090 -v /home/ec2-user/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
-
-chave git hub - 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
