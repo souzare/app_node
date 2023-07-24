@@ -13,6 +13,7 @@ const counter = new client.Counter({
 
 app.get('/', function(req, res){
     counter.labels('200').inc();
+    counter.labels('300').inc();
     res.send('Helo World');
 });
 
