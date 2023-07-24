@@ -7,11 +7,12 @@ var app = express();
 const client = require('prom-client');
 const counter = new client.Counter({
     name: 'aula_request_total',
-    help: 'Contador de requests'
+    help: 'Contador de requests',
+    labelNames: ['statusCode']
 })
 
 app.get('/', function(req, res){
-    counter.inc();
+    counter.labels('200').inc();
     res.send('Helo World');
 });
 
