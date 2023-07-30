@@ -4,8 +4,8 @@ const register = prom.register;
 
 var app = express();
 
-const client = require('prom-client');
-const counter = new client.Counter({
+
+const counter = new prom.Counter({
     name: 'aula_request_total',
     help: 'Contador de requests',
     labelNames: ['statusCode']
