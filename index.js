@@ -31,8 +31,8 @@ const summary = new prom.Summary({
 app.get('/', function(req, res){
     counter.labels('200').inc();
     counter.labels('300').inc();
-    gauge.set(100*Math.random());
-    const tempo = Math.random()
+    gauge.set(100 * Math.random());
+    const tempo = Math.random();
     histogram.observe(tempo);
     summary.observe(tempo)
 
