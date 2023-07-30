@@ -34,7 +34,7 @@ app.get('/', function(req, res){
     gauge.set(100 * Math.random());
     const tempo = Math.random();
     histogram.observe(tempo);
-    summary.observe(tempo)
+    summary.observe(tempo);
 
 
     res.send('Helo World');
