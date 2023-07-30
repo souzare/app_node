@@ -25,7 +25,7 @@ const histogram = new prom.Histogram({
 const summary = new prom.Summary({
     name: 'aula_summary_request_time_seconds',
     help: 'Tempo de resposta da API',
-    percentilel: [0.5, 0.9, 0.99]
+    percentiles: [0.5, 0.9, 0.99]
 })
 
 app.get('/', function(req, res){
