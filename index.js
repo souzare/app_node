@@ -11,9 +11,17 @@ const counter = new prom.Counter({
     labelNames: ['statusCode']
 });
 
+const gauge = new prom.Gauge({
+    name: 'aula_free_bytes',
+    help: 'Exemplo de gauge'
+});
+
 app.get('/', function(req, res){
     counter.labels('200').inc();
     counter.labels('300').inc();
+    gauge.set(100*Math.random());
+
+
     res.send('Helo World');
 });
 
