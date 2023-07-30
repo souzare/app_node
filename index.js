@@ -22,7 +22,7 @@ const histogram = new prom.Histogram({
     buckets: [0.1, 0.2, 0.3, 0.4, 0.5]
 });
 
-const summary = new prom.summary({
+const summary = new prom.Summary({
     name: 'aula_summary_request_time_seconds',
     help: 'Tempo de resposta da API',
     percentilel: [0.5, 0.9, 0.99]
