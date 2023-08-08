@@ -17,3 +17,13 @@ scrape_configs:
   static_configs:
   - targets:
     - 3.238.78.104:80
+
+- job_name: docker
+  static_configs:
+    - targets:
+      - 3.238.78.104:9323
+
+- job_name: cadvisor
+  static_configs:
+  - targets:
+    - 3.238.78.104:8081
