@@ -12,3 +12,8 @@ scrape_configs:
   static_configs:
   - targets:
     - localhost:9090
+
+- job_name : app_python
+  static_configs:
+  - targets:
+    - 44.204.220.57:5000
