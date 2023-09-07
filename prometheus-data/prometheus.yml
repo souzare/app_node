@@ -16,19 +16,19 @@ scrape_configs:
 - job_name : app_python
   static_configs:
   - targets:
-    - 44.204.220.57:5000
+    - 3.230.158.85:5000
 
-- job_name: node-interno
-  static_configs:
-  - targets: 
-    - 34.200.250.101:9100
+# - job_name: node-interno
+#   static_configs:
+#   - targets: 
+#     - 34.200.250.101:9100
 
-- job_name: cadvisor
-  static_configs:
-  - targets:
-    - 34.200.250.101:8081
+# - job_name: cadvisor
+#   static_configs:
+#   - targets:
+#     - 34.200.250.101:8081
 
-- job_name: aula
-  static_configs:
-  - targets:
-    - 44.204.220.57:80
+# - job_name: aula
+#   static_configs:
+#   - targets:
+#     - 44.204.220.57:80
