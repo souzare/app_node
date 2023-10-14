@@ -1,3 +1,13 @@
+var apm = require('elastic-apm-node').start({
+	serviceName: 'my-service-name',
+  
+	secretToken: 'ePqEgkp1QESVHzKNwK',
+  
+	serverUrl: 'https://83bdca7098464ab69ad360be80950c3d.apm.us-east-2.aws.elastic-cloud.com:443',
+  
+	environment: 'my-environment'
+  })
+
 var express = require('express');
 var promClient = require('prom-client');
 const register = promClient.register;
